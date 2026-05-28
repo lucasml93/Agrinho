@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroEmpreende - Agrinho Ensino Médio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 AgroEmpreende</h1>
+        <p>Seu assistente para o projeto do Agrinho - Ensino Médio</p>
+    </header>
 
+    <main>
+        <section id="form-section">
+            <h2>Novo Projeto</h2>
+            <form id="projectForm">
+                <label>Nome do Projeto:</label>
+                <input type="text" id="nome" required>
+
+                <label>Escola:</label>
+                <input type="text" id="escola" required>
+
+                <label>Tema:</label>
+                <input type="text" id="tema" required>
+
+                <label>Objetivo:</label>
+                <textarea id="objetivo" rows="3" required></textarea>
+
+                <button type="submit">Criar Projeto</button>
+            </form>
+        </section>
+
+        <section id="projects-list">
+            <h2>Meus Projetos</h2>
+            <div id="projects"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito para o Agrinho | Ensino Médio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
